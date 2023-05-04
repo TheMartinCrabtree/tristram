@@ -3,8 +3,11 @@ import styled from "styled-components";
 
 type FooterProps = {};
 
+// temp text align
 const FooterWrapper = styled.div`
+  width: 100%;
   color: white;
+  text-align: center;
 `;
 
 const Footer = ({}: FooterProps) => {
