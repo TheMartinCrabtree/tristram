@@ -3,6 +3,8 @@ const data = {
     title: "Header Title",
     children: "Header Subtitle",
   },
+  hero: {},
+  sections: [{}, {}, {}],
   footer: {},
 };
 

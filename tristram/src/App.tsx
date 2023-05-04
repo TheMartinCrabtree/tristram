@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./components/header";
 import Footer from "./components/footer";
-// test data
+import Hero from "./components/hero";
+// temp test data
 import data from "./data";
 // import "./App.css";
 
@@ -15,25 +16,23 @@ const TempBody = styled.div`
   background-color: black;
   border-radius: 3px;
   border: 2px solid darkgrey;
+  padding: 1vmin;
 `;
 
 const LayoutWrapper = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-
-  div:last-child {
-    align-self: flex-end;
-  }
 `;
 
 function App() {
-  const { header, footer } = data;
+  const { header, footer, hero } = data;
 
   return (
     <TempBody className="App">
       <LayoutWrapper>
         <Header {...header} />
+        <Hero />
         <Footer {...footer} />
       </LayoutWrapper>
     </TempBody>
