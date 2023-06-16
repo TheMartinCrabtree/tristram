@@ -2,8 +2,10 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import SubSection, { type SubSectionProps } from "./SubSection";
 
+// need to update prop type for subsection
 type MainSectionProps = {
-  sections?: Array<SubSectionProps>;
+  // sections?: Array<SubSectionProps>;
+  sections?: any;
 };
 
 // temp text align

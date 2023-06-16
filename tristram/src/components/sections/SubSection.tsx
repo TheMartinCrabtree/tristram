@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 
 type SubSectionProps = {
+  type?: "grid" | "textBlock" | "imageBlock";
   data?: any;
 };
 

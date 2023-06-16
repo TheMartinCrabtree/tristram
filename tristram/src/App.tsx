@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { breakpoints } from "./components/utilities";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import { Hero } from "./components/hero";
@@ -16,8 +17,12 @@ const TempBody = styled.div`
   min-height: 1600px;
   background-color: black;
   border-radius: 3px;
-  border: 2px solid darkgrey;
-  padding: 1vmin;
+  border: 2px solid black;
+
+  @media screen and (min-width: ${breakpoints.desktop}) {
+    max-width: 1280px;
+    margin: auto;
+  }
 `;
 
 const LayoutWrapper = styled.div`
@@ -27,13 +32,14 @@ const LayoutWrapper = styled.div`
 `;
 
 function App() {
-  const { header, footer, hero } = data;
+  const { header, footer, hero, sections } = data;
 
   return (
     <TempBody className="App">
       <LayoutWrapper>
         <Header {...header} />
-        <Hero />
+        <Hero {...hero} />
+        <MainSection {...sections} />
         <Footer {...footer} />
       </LayoutWrapper>
     </TempBody>
