@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
 
-type HeroProps = {};
+export interface HeroProps {}
 
 const HeroContainer = styled.div`
   color: black;
