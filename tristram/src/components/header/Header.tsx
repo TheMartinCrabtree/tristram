@@ -12,7 +12,7 @@ const HeaderWrapper = styled.div`
   align-items: center;
 
   margin: 0px;
-  padding: 0.5em 0;
+  padding: 2rem 0px 1rem 0px;
   background-color: white;
   opacity: 0.95;
   color: black;

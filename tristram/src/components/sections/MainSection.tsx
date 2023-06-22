@@ -13,6 +13,7 @@ const MainSectionWrapper = styled.div`
   width: 100%;
   color: white;
   text-align: center;
+  padding: 20px 0px;
 
   align-self: flex-end;
 `;

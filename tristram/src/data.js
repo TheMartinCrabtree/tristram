@@ -1,15 +1,20 @@
 const sectionArr = [
   {
     type: "grid",
-    data: "grid",
+    data: [
+      { title: "grid item 1" },
+      { title: "grid item 2" },
+      { title: "grid item 3" },
+      { title: "grid item 4" },
+      { title: "grid item 5" },
+      { title: "grid item 6" },
+      { title: "grid item 7" },
+      { title: "grid item 8" },
+    ],
   },
   {
     type: "textBlock",
     data: "textBlock",
-  },
-  {
-    type: "imageBlock",
-    data: "imageBlock",
   },
 ];
 
@@ -29,7 +34,9 @@ const data = {
   sections: {
     sections: sectionArr,
   },
-  footer: {},
+  footer: {
+    // github, medium article,  linkedin
+  },
 };
 
 export default data;

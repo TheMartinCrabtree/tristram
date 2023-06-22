@@ -16,8 +16,6 @@ import data from "./data";
 const TempBody = styled.div`
   min-height: 1600px;
   background-color: black;
-  border-radius: 3px;
-  border: 2px solid black;
 
   @media screen and (min-width: ${breakpoints.desktop}) {
     max-width: 1280px;
