@@ -9,7 +9,6 @@ import { MainSection } from "./components/sections";
 import data from "./data";
 // import "./App.css";
 
-// todo header, footer, hero, body
 // body: skills & expertise, projects, experience
 
 // for testing scrolling etc
