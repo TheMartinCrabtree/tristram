@@ -13,10 +13,8 @@ const HeaderWrapper = styled.div`
 
   margin: 0px;
   padding: 2rem 0px 1rem 0px;
-  background-color: white;
-  opacity: 0.95;
-  color: black;
-
+  background-color: #000018;
+  color: white;
   position: sticky;
   top: 0;
 

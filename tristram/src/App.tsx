@@ -12,9 +12,14 @@ import data from "./data";
 // body: skills & expertise, projects, experience
 
 // for testing scrolling etc
+const Background = styled.div`
+  background-image: url(background.jpg);
+`;
+
 const TempBody = styled.div`
-  min-height: 1600px;
+  height: 100vh;
   background-color: black;
+  opacity: 0.9;
 
   @media screen and (min-width: ${breakpoints.desktop}) {
     max-width: 1280px;
@@ -28,18 +33,25 @@ const LayoutWrapper = styled.div`
   flex-direction: column;
 `;
 
+const Spacer = styled.div`
+  flex: 1;
+`;
+
 function App() {
   const { header, footer, hero, sections } = data;
 
   return (
-    <TempBody className="App">
-      <LayoutWrapper>
-        <Header {...header} />
-        <Hero {...hero} />
-        <MainSection {...sections} />
-        <Footer {...footer} />
-      </LayoutWrapper>
-    </TempBody>
+    <Background>
+      <TempBody>
+        <LayoutWrapper>
+          <Header {...header} />
+          <Hero {...hero} />
+          <MainSection {...sections} />
+          <Spacer />
+          <Footer {...footer} />
+        </LayoutWrapper>
+      </TempBody>
+    </Background>
   );
 }
 

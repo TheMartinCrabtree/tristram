@@ -16,6 +16,14 @@ const sectionArr = [
     type: "textBlock",
     data: "textBlock",
   },
+  {
+    type: "textBlock",
+    data: "textBlock",
+  },
+  {
+    type: "textBlock",
+    data: "textBlock",
+  },
 ];
 
 const data = {
