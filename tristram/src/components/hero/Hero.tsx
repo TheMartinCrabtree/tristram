@@ -21,13 +21,19 @@ const TextContainer = styled.div`
   background-color: lightgrey;
 `;
 
+// background-image: url(headshot.jpg);
 const ImageContainer = styled.div`
-  width: 50%;
+  width: auto;
+
   background-color: lightslategrey;
 `;
 
 const BodyContainer = styled.div`
   font-size: 10px;
+`;
+
+const ImageComponent = styled.img`
+  max-width: 100%;
 `;
 
 // need to set fonts
@@ -41,7 +47,9 @@ const Hero = ({ textblock, imageblock }: HeroProps) => {
           <BodyContainer>{textblock.body}</BodyContainer>
         )}
       </TextContainer>
-      <ImageContainer>Hero Image Container</ImageContainer>
+      <ImageContainer>
+        <ImageComponent src="./headshot.jpg" alt="image" />
+      </ImageContainer>
     </HeroContainer>
   );
 };
